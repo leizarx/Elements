@@ -1,4 +1,8 @@
-  console.log('CDN-V');
+console.time('myTimer');
+for (let i = 0; i < 1000000; i++) {
+}
+console.timeEnd('myTimer');
+
   $(document).keydown(function(event) {
   if (event.ctrlKey && event.key === "|") {
       var FILLL = localStorage.getItem('FILLL');
