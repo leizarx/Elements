@@ -1,4 +1,5 @@
-$(document).keydown(function(event) {
+<script>
+  $(document).keydown(function(event) {
   if (event.ctrlKey && event.key === " ") {
       var FILLL = localStorage.getItem('FILLL');
 
@@ -56,3 +57,5 @@ function activeElements() {
       }
   });
 }
+
+  </script>
