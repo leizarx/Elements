@@ -1,6 +1,6 @@
   
   $(document).keydown(function(event) {
-  if (event.ctrlKey && event.key === "") {
+  if (event.ctrlKey && event.key === "a") {
       var FILLL = localStorage.getItem('FILLL');
 
       activeElements();
