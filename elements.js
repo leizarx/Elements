@@ -1,3 +1,16 @@
+var cssId = 'panel';  
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://cdn.jsdelivr.net/gh/leizarx/Elements@a3eb69dbb9ddd84d7aa0ece3d7f8c55fe8a08777/elements.css';
+    link.media = 'all';
+    head.appendChild(link);
+}
+
 function generarHashNumerico(longitud) {
   let hash = '';
   for (let i = 0; i < longitud; i++) {hash += Math.floor(Math.random() * 10);}
