@@ -6,7 +6,7 @@
       activeElements();
       event.preventDefault();
   }
-});
+}); 
 function activeElements() {
   var elementos = document.querySelectorAll('input, select, button');
   elementos.forEach(function(elemento) {
