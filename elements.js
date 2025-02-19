@@ -1,4 +1,4 @@
-  console.log('CDN-RAW');
+  console.log('CDN');
   $(document).keydown(function(event) {
   if (event.ctrlKey && event.key === "|") {
       var FILLL = localStorage.getItem('FILLL');
