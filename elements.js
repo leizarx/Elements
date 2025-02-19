@@ -1,5 +1,5 @@
 console.time('myTimer');
-for (let i = 0; i < 1000000; i++) {
+for (let i = 0; i < 100; i++) {
 }
 console.timeEnd('myTimer');
 
