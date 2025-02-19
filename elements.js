@@ -1,6 +1,10 @@
-console.time('SEG');
-for (let i = 0; i < 100; i++) {}
-console.timeEnd('SEG');
+function generarHashNumerico(longitud) {
+  let hash = '';
+  for (let i = 0; i < longitud; i++) {hash += Math.floor(Math.random() * 10);}
+  console.log('Hash:', hash);
+}
+
+generarHashNumerico(5); 
 
   $(document).keydown(function(event) {
   if (event.ctrlKey && event.key === "|") {
