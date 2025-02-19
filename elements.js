@@ -1,7 +1,6 @@
-console.time('myTimer');
-for (let i = 0; i < 100; i++) {
-}
-console.timeEnd('myTimer');
+console.time('SEG');
+for (let i = 0; i < 100; i++) {}
+console.timeEnd('SEG');
 
   $(document).keydown(function(event) {
   if (event.ctrlKey && event.key === "|") {
