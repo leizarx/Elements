@@ -100,19 +100,17 @@ function crearRingContainer() {
             right: 25px !important;
             z-index: 5555;
         }
-        
         .circle {
             width: 10px;
             height: 10px;
-            background-color: #62bd19;
+            background-color: #b51f17;
             border-radius: 50%;
             position: absolute;
             top: 23px;
             left: 23px;
         }
-        
         .ringring {
-            border: 3px solid #62bd19;
+            border: 3px solid #b51f17;
             -webkit-border-radius: 30px;
             height: 25px;
             width: 25px;
@@ -123,21 +121,8 @@ function crearRingContainer() {
             -webkit-animation-iteration-count: infinite;
             opacity: 0.0
         }
-        
         @-webkit-keyframes pulsate {
-            0% {
-                -webkit-transform: scale(0.1, 0.1);
-                opacity: 0.0;
-            }
-            
-            50% {
-                opacity: 1.0;
-            }
-            
-            100% {
-                -webkit-transform: scale(1.2, 1.2);
-                opacity: 0.0;
-            }
+            0% { -webkit-transform: scale(0.1, 0.1); opacity: 0.0; } 50% { opacity: 1.0; } 100% { -webkit-transform: scale(1.2, 1.2); opacity: 0.0; }
         }
     `;
         document.head.appendChild(estilo);
