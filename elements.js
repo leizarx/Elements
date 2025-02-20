@@ -103,14 +103,14 @@ function crearRingContainer() {
         .circle {
             width: 10px;
             height: 10px;
-            background-color: #b51f17;
+            background-color: #F44336;
             border-radius: 50%;
             position: absolute;
             top: 23px;
             left: 23px;
         }
         .ringring {
-            border: 3px solid #b51f17;
+            border: 3px solid #F44336;
             -webkit-border-radius: 30px;
             height: 25px;
             width: 25px;
