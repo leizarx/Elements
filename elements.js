@@ -78,3 +78,70 @@ function activeElements() {
     });
 }
 
+function crearRingContainer() {
+        const ringContainer = document.createElement('div');
+        ringContainer.classList.add('ring-container');
+        const ringring = document.createElement('div');
+        ringring.classList.add('ringring');
+        const circle = document.createElement('div');
+        circle.classList.add('circle');
+        ringContainer.appendChild(ringring);
+        ringContainer.appendChild(circle);
+        return ringContainer;
+    }
+    function agregarEstilosRingContainer() {
+        const estilo = document.createElement('style');
+        estilo.textContent = `
+        .ring-container {
+            height: 20px;
+            width: 20px;
+            position: fixed;
+            bottom: 25px !important;
+            right: 25px !important;
+            z-index: 5555;
+        }
+        
+        .circle {
+            width: 10px;
+            height: 10px;
+            background-color: #62bd19;
+            border-radius: 50%;
+            position: absolute;
+            top: 23px;
+            left: 23px;
+        }
+        
+        .ringring {
+            border: 3px solid #62bd19;
+            -webkit-border-radius: 30px;
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            -webkit-animation: pulsate 1s ease-out;
+            -webkit-animation-iteration-count: infinite;
+            opacity: 0.0
+        }
+        
+        @-webkit-keyframes pulsate {
+            0% {
+                -webkit-transform: scale(0.1, 0.1);
+                opacity: 0.0;
+            }
+            
+            50% {
+                opacity: 1.0;
+            }
+            
+            100% {
+                -webkit-transform: scale(1.2, 1.2);
+                opacity: 0.0;
+            }
+        }
+    `;
+        document.head.appendChild(estilo);
+    }
+    const ringContainer = crearRingContainer();
+    document.body.appendChild(ringContainer);
+    agregarEstilosRingContainer();
