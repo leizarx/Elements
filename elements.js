@@ -1,3 +1,23 @@
+let log = {
+style: 'font-size: 12px; padding: 5px; border-radius: 5px; margin: 5px 0px; font-weight: bold;  ',
+info: (msg) => {
+console.log(`%c${msg}`, `color: #3b8aff; ${log.style}`)
+},
+warn: (msg) => {
+console.log(`%c${msg}`, `color: #f9cf2e; ${log.style}`)
+},
+success: (msg) => {
+console.log(`%c${msg}`, `color: #91fa49; ${log.style}`)
+},
+error: (msg) => {
+console.log(`%c${msg}`, `color: #f22727; ${log.style}`)
+},
+table: (msg) => {
+console.log(`%c${msg}`, `color: #ff7a29; ${log.style}`)
+}
+}
+
+
 var cssId = 'panel';  
 if (!document.getElementById(cssId)){
 var head  = document.getElementsByTagName('head')[0];
